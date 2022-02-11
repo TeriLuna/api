@@ -1,0 +1,25 @@
+body {
+    background-color: #222;
+  }
+  .layout {
+    width: 500px;
+    height: 700px;
+    display: none;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 24px;
+    text-align: center;
+    background-color: black;
+    border: 3px dashed purple;
+    float: left;
+  }
+  .cerrar {
+    text-align: right;
+    cursor: pointer;
+  }
+
+  .loading {
+    width: 100px;
+    height: auto;
+    display: none;
+  }

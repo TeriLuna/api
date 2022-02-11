@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Subcription</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="layout" style="display: block" id="inicio">
+      <p>Bienvenido</p>
+      <button id="empezar">Empezar</button>
+      <button id="mostrarCarrito">Carrito</button>
+    </div>
+    <div class="layout" id="form">
+      <p>Introduce tu correo electronico</p>
+      <input type="text" />
+      <button id="enviar">Enviar</button>
+      <img src="loading.gif" class="loading" />
+      <p id="err" style="color: red; display: none">
+        Debe introducir un email valido
+      </p>
+      <p id="ok" style="color: green; display: none">
+        Se ha registrado correctamente
+      </p>
+    </div>
+    <div class="layout" id="gracias">
+      <p>Gracias</p>
+      <button id="otro">Añadir otro</button>
+    </div>
+    <div class="layout" id="carrito">
+      <p class="cerrar">x</p>
+      <p>Carrito</p>
+    </div>
+    <div class="layout" id="error">
+      <p>Pagina no encontrada</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/router.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/ajax.js"></script>
+  </body>
+</html>
