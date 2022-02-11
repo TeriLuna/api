@@ -10,7 +10,10 @@ const port = 3000;
 let rawdata = fs.readFileSync("subscriptions.json");
 let subscriptions = JSON.parse(rawdata) || [];
 
-app.use(cors());
+app.use(cors({
+  origin: "*",
+  methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
+}));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/checkout", (req, res) => {
